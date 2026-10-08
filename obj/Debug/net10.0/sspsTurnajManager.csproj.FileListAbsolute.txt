@@ -1,0 +1,15 @@
+/home/adam/TurnajovySystemSSPSMarekDeTezit/bin/Debug/net10.0/sspsTurnajManager
+/home/adam/TurnajovySystemSSPSMarekDeTezit/bin/Debug/net10.0/sspsTurnajManager.deps.json
+/home/adam/TurnajovySystemSSPSMarekDeTezit/bin/Debug/net10.0/sspsTurnajManager.runtimeconfig.json
+/home/adam/TurnajovySystemSSPSMarekDeTezit/bin/Debug/net10.0/sspsTurnajManager.dll
+/home/adam/TurnajovySystemSSPSMarekDeTezit/bin/Debug/net10.0/sspsTurnajManager.pdb
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.AssemblyInfoInputs.cache
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.AssemblyInfo.cs
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.csproj.CoreCompileInputs.cache
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.sourcelink.json
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.dll
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/refint/sspsTurnajManager.dll
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.pdb
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/sspsTurnajManager.genruntimeconfig.cache
+/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/Debug/net10.0/ref/sspsTurnajManager.dll
