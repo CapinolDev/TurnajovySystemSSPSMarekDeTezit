@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/erdinc/sspsTurnajManager/sspsTurnajManager.csproj": {}
+    "/home/adam/TurnajovySystemSSPSMarekDeTezit/sspsTurnajManager.csproj": {}
   },
   "projects": {
-    "/home/erdinc/sspsTurnajManager/sspsTurnajManager.csproj": {
+    "/home/adam/TurnajovySystemSSPSMarekDeTezit/sspsTurnajManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/erdinc/sspsTurnajManager/sspsTurnajManager.csproj",
+        "projectUniqueName": "/home/adam/TurnajovySystemSSPSMarekDeTezit/sspsTurnajManager.csproj",
         "projectName": "sspsTurnajManager",
-        "projectPath": "/home/erdinc/sspsTurnajManager/sspsTurnajManager.csproj",
-        "packagesPath": "/home/erdinc/.nuget/packages/",
-        "outputPath": "/home/erdinc/sspsTurnajManager/obj/",
+        "projectPath": "/home/adam/TurnajovySystemSSPSMarekDeTezit/sspsTurnajManager.csproj",
+        "packagesPath": "/home/adam/.nuget/packages/",
+        "outputPath": "/home/adam/TurnajovySystemSSPSMarekDeTezit/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/erdinc/.nuget/NuGet/NuGet.Config"
+          "/home/adam/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/adam/.dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
