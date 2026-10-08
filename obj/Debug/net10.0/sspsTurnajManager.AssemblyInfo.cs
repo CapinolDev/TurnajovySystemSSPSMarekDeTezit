@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sspsTurnajManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4342c140659684e2f009c368b10fde2727987dee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b81782ea906fbae1ceb6be28fbfb6c949ef31d0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("sspsTurnajManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sspsTurnajManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
