@@ -5,13 +5,13 @@ namespace TurnajManager;
 public class Turnaj
 {
     public string Nazev { get; set; }
-    public DateTime Datum { get; set; }
+    public DateTime DatumKonani { get; set; }
     public List<Hrac> Hraci { get; set; }
 
-    public Turnaj(string nazev, DateTime datum)
+    public Turnaj(string nazev, string datumKonaniVeStringu)// priklady vyvolani: "15.10.1919" NEBO: "U32", "2026-10-15 14:30:00"; zminit jak vyvolat v consolovy komunikaci s poradatelem
     {
         Nazev = nazev;
-        Datum = datum;
+        DatumKonani = DateTime.Parse(datumKonaniVeStringu);
         Hraci = new List<Hrac>();
     }
 
@@ -23,7 +23,7 @@ public class Turnaj
 
     public void VypsatHrace()
     {
-        Console.WriteLine($"Turnaj: {Nazev} ({Datum.ToShortDateString()})");
+        Console.WriteLine($"Turnaj: {Nazev} ({DatumKonani.ToShortDateString()})");
         foreach (var h in Hraci)
         {
             Console.WriteLine($" - {h.Jmeno}");
