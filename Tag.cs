@@ -2,5 +2,5 @@
 
 public enum Tag
 {
-    Deleted, Banned
+    Aktivni, Smazany, Zabanovany
 }
