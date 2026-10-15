@@ -2,5 +2,5 @@
 
 public enum Tag
 {
-    Aktivni, Smazany, Zabanovany
+    Aktivni, Smazany, Zabanovany, Vyrazeny
 }

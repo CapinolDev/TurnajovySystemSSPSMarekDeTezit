@@ -3,13 +3,13 @@ public class Hrac
 {
     public string Jmeno;
     public float Body;
-    public int GamesPlayed;
+    public int HryCelkemHrane;
     public Tag Tag { get; set; } = Tag.Aktivni;
-    public Hrac(string jmeno, float body, int gamesplayed)
+    public Hrac(string jmeno, float body, int hryCelkemHrane)
     {
         this.Jmeno = jmeno;
         this.Body = body;
-        this.GamesPlayed = gamesplayed;
+        this.HryCelkemHrane = hryCelkemHrane;
     }   
 
 }
