@@ -2,7 +2,7 @@ namespace TurnajManager;
 public class Hrac
 {
     public string Jmeno;
-    public float Body;
+    public float Body = 0;
     public int HryCelkemHrane;
     public Tag Tag { get; set; } = Tag.Aktivni;
     public bool JeAktvivni => Tag == Tag.Aktivni;

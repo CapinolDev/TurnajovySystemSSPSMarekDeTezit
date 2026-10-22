@@ -1,5 +1,27 @@
 ﻿using TurnajManager;
 
+static void VypsatHrace(Turnaj turnaj)
+{
+    Console.WriteLine($"Turnaj: {turnaj.Nazev} \nDatum Konaní: {turnaj.DatumKonani}\n");
+    foreach (var h in turnaj.HraciVsichni)
+    {
+        Console.WriteLine($"{h.Jmeno} - {h.Body}, {h.Tag}");
+    }
+}
+
+static void PridatHrace(Turnaj turnaj)
+{
+    Console.WriteLine("Jméno hráče: ");
+    var jmeno = Console.ReadLine();
+    if (turnaj.PridatHrace(new Hrac(jmeno, 0, 0)))
+    {
+        Console.WriteLine($"Hráč {jmeno} byl přidán.");
+    }
+    else
+    {
+        Console.WriteLine("Hráče se nepodařilo přidat (prázdné nebo duplicitní jméno).");
+    }
+}
 const string DefaultFilePath = TournamentFileService.DefaultFilePath;
 var currentTournament = new Turnaj("U32", "15.10.2026");
 

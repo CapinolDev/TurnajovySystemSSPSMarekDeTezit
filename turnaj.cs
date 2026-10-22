@@ -37,10 +37,19 @@ public class Turnaj
         HraciVsichni = new List<Hrac>();
     }
 
-    public void PridatHrace(Hrac hrac)
+    public bool PridatHrace(Hrac hrac)
     {
+        if (string.IsNullOrWhiteSpace(hrac.Jmeno))
+        {
+            return false;
+        } 
+        if (HraciVsichni.Any(h => h.Jmeno.Equals(hrac.Jmeno, StringComparison.OrdinalIgnoreCase) && h.JeAktvivni))
+        {
+            return false;
+        }
         HraciVsichni.Add(hrac);
         Console.WriteLine($"Hráč {hrac.Jmeno} byl přidán do turnaje {Nazev}.");
+        return true;
     }
 
     public void VypsatHrace()
