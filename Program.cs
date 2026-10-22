@@ -27,18 +27,32 @@ try
     }
     else
     {
-        currentTournament = TournamentFileService.Load(filePath);
+        try
+        {
+            currentTournament = TournamentFileService.Load(filePath);
+        }
+        catch (InvalidDataException exception)
+        {
+            Console.Error.WriteLine($"Tournament file '{filePath}' is invalid: {exception.Message}");
+            Console.Write($"Create a new tournament and replace this file? (y/N): ");
+            var answer = Console.ReadLine();
+            if (!string.Equals(answer, "y", StringComparison.OrdinalIgnoreCase))
+            {
+                Environment.ExitCode = 1;
+                return;
+            }
+
+            currentTournament = new Turnaj("U32", "15.10.2026");
+            TournamentFileService.Save(currentTournament, filePath);
+            Console.WriteLine($"A new tournament was created in '{filePath}'.");
+        }
+
         currentTournament.VypsatHrace();
     }
 }
 catch (IOException exception)
 {
     Console.Error.WriteLine($"Could not access tournament file '{filePath}': {exception.Message}");
-    Environment.ExitCode = 1;
-}
-catch (InvalidDataException exception)
-{
-    Console.Error.WriteLine($"Tournament file '{filePath}' is invalid: {exception.Message}");
     Environment.ExitCode = 1;
 }
 catch (ArgumentException exception)
