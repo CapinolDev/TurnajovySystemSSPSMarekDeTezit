@@ -4,33 +4,14 @@ public static class RozdelovaciSystem
 {
     public static List<Zapas> Losovani(List<Hrac> hraci)
     {
-        var random = new Random();
+        var aktivni = hraci.Where(h => h.JeAktvivni).ToList();
         var zapasy = new List<Zapas>();
-        var zbyvajici = new List<Hrac>();
-        foreach (Hrac h in hraci)
+        for (int i = 0; i < aktivni.Count; i++)
         {
-            if (h.JeAktvivni)
+            for (int j = i + 1; j < aktivni.Count; j++)
             {
-                zbyvajici.Add(h);
+                zapasy.Add(new Zapas(aktivni[i], aktivni[j]));
             }
-        }
-        while (zbyvajici.Count >= 2)
-        {
-            int h1 = random.Next(zbyvajici.Count);
-            Hrac hrac1 = zbyvajici[h1];
-            zbyvajici.RemoveAt(h1);
-            
-            int h2 = random.Next(zbyvajici.Count);
-            Hrac? hrac2 = zbyvajici[h2];
-            zbyvajici.RemoveAt(h2);
-            zapasy.Add(new Zapas(hrac1, hrac2));
-        }
-
-        if (zbyvajici.Count == 1)
-        {
-            var volny = new Zapas(zbyvajici[0], null);
-            volny.Vyherce = zbyvajici[0];
-            zapasy.Add(volny);
         }
         return zapasy;
     }
