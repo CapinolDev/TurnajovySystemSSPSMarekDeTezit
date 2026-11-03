@@ -11,10 +11,10 @@
 
 ## 2. Pravidla bodování
 Bodové ohodnocení zápasů v základní části:
-* **Výhra:** `3` body *(příklad, uprav podle sebe, např. 2 nebo 3)*
-* **Remíza:** `1` bod
+* **Výhra:** `1` body 
+* **Remíza:** `0.5` bod
 * **Prohra:** `0` bodů
-* **Volný los (Bye):** `3` body *(nebo odpovídající počet bodů za výhru, případně specifické pravidlo)*
+* **Volný los (Bye):** `1` body 
 
 ---
 
