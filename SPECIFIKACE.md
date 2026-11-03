@@ -21,7 +21,7 @@ Bodové ohodnocení zápasů v základní části:
 ## 3. Seznam funkcí (Features)
 * **Správa účastníků:**
   * Přidání a odebrání účastníků turnaje.
-  * Generování rozlosování (pavouk, skupinový systém, ligový systém).
+  * Generování rozlosování (vsichni proti vsem).
 * **Správa zápasů a výsledků:**
   * Zadávání a úprava výsledků jednotlivých utkání.
   * Ošetření situací s lichým počtem hráčů (automatické přidělení volného losu).
